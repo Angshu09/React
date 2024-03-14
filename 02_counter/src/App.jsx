@@ -9,14 +9,22 @@ function App() {
   // let counter = 5;
 
   const addValue = ()=>{
-    if(counter == 20){
+    if(counter > 20){
       return;
     }
-    stateCounter(counter+1);
+    // stateCounter(counter+1);
+    // stateCounter(counter+1);
+    // stateCounter(counter+1);
+    // stateCounter(counter+1);
+
+    stateCounter((prevCounter) => prevCounter+1);
+    stateCounter((prevCounter) => prevCounter+1);
+    stateCounter((prevCounter) => prevCounter+1);
+    stateCounter((prevCounter) => prevCounter+1);
   }
 
   const removeValue = ()=>{
-    if(counter == 0){
+    if(counter <= 0){
       return;
     }
     stateCounter(counter-1);
