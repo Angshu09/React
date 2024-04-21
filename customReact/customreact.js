@@ -1,21 +1,21 @@
-/*function customRender(reactElement, container){
-    const domElement = document.createElement(reactElement.type);
-    domElement.innerHTML = reactElement.children;
-    domElement.setAttribute('href', reactElement.props.href);
-    domElement.setAttribute('target', reactElement.props.target);
-    container.appendChild(domElement);
-}*/ 
+/*function customRender(reactElement, container){ //Version 1
+    const domElement = document.createElement(reactElement.type)
+    domElement.innerHTML = reactElement.children
+    domElement.setAttribute('href', reactElement.props.href)
+    domElement.setAttribute('target', reactElement.props.target)
+    container.appendChild(domElement)
+}*/
 
-function customRender(reactElement, container){
-   const domElement = document.createElement(reactElement.type);
-   domElement.innerHTML = reactElement.children;
-   for(const prop in reactElement.props){
-        if(prop == children){
-            continue;
+function customRender(reactElement, container){ //Version 2 
+    const domElement = document.createElement(reactElement.type)
+    domElement.innerHTML = reactElement.children
+    for(const prop in reactElement.props){
+        if(prop === 'children'){
+            continue
         }
-        domElement.setAttribte(prop, reactElement.props[prop]);
-   }
-   container.appendChild(domElement);
+        domElement.setAttribute(prop, reactElement.props[prop])
+    }
+    container.appendChild(domElement)
 }
 
 const reactElement = {
@@ -24,9 +24,8 @@ const reactElement = {
         href: 'https://google.com',
         target: '_blank'
     },
-    children: 'Click me to visit google'
+    children: 'Click me to visit Google'
 }
 
 const mainContainer = document.getElementById('root');
-
 customRender(reactElement, mainContainer)
