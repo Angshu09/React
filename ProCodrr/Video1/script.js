@@ -1,4 +1,22 @@
-const h1 = React.createElement('h1', {className: 'subheading', key: 1}, 'HelloWorld');
+// const h1 = React.createElement('h1', {className: 'subheading', key: 1}, 'HelloWorld');
+
+// const h1 = {
+//     $$typeof: Symbol.for('react.element'),
+//     key: "1",
+//     type: 'h1',
+//     props: {
+//         className: 'subheading',
+//         children: 'HelloWorld'
+//     },
+//     ref: null,
+// } // This is basically a react object
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(h1);
+
+
+
+
 
 const container = React.createElement('div', {className: 'container', id: 'container'}, 
 [

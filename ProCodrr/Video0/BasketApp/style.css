@@ -1,0 +1,12 @@
+.main{
+    border: 1px solid red;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
