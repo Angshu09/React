@@ -21,3 +21,4 @@ const container = /*#__PURE__*/React.createElement("div", {
   placeholder: "Enter"
 }), /*#__PURE__*/React.createElement("br", null))));
 ReactDOM.createRoot(document.querySelector(".root")).render(container);
+//# sourceMappingURL=script.js.map
