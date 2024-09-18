@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Arrow({imgUrl, name, onClick}) {
+export default function Arrow({imgUrl, name, onClick, children}) {
   return (
     <div className='arrow' onClick={onClick}><img src={imgUrl} alt="Button" />
-    <p>{name}</p>
+    <p>{children}</p>
     </div>
   )
 }

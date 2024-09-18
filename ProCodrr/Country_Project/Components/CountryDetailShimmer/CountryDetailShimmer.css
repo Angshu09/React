@@ -1,0 +1,30 @@
+.imgdiv{
+    width: 40%;
+    height: 250px;
+    background-color: #ccc;
+}
+
+.h1Div{
+    height: 44px;
+    background-color: #ccc;
+    width: 200px;
+    margin-bottom: 35px;
+}
+
+.shimmer-text p{
+    height: 25px;
+    width: 250px;
+    background-color: #ccc;
+}
+
+.shimmer-text{
+    display: flex;
+    align-items: center;
+}
+
+.shimmer-button{
+    height: 25px;
+    width: 100px;
+    background-color: #ccc;
+
+}

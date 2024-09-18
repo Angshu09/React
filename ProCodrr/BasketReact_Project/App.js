@@ -1,5 +1,7 @@
 import React from 'react'
 import Container from './components/Container'
+import Counter from './components/Counter'
+
 
 export default function App() {
   return (
@@ -9,8 +11,9 @@ export default function App() {
       }}>Hello</h1>
 
       <input onChange={(e) => console.log(e.target.value)} type="text" /> */}
-       {/* <Container onClick={(e) => console.log('hi')} /> */}
-       <Container />
+       <Container onClick={(e) => console.log('hi')} />
+       {/* <Container /> */}
+       {/* <Counter /> */}
     </>   
   )
 }
