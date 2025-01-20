@@ -19,4 +19,4 @@ This repository contains code and projects I am creating while learning React. I
 1. **Clone the repository**:
    Open your terminal or command prompt and run the following command to clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/react-learning-repo.git
+   git clone https://github.com/Angshu09/React.git
