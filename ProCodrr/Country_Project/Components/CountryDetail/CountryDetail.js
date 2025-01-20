@@ -66,7 +66,7 @@ export default function CountryDetail() {
     return <div>Country not found</div>;
   }
 
-  return countryData === null ? (
+  return countryData == null ? (
     <CountryDetailShimmer />
   ) : (
     <main className={`${isDark ? "dark" : ""}`}>
