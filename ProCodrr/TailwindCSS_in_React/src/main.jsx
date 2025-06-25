@@ -1,4 +1,3 @@
-
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
@@ -8,15 +7,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home.jsx";
 import { lazy } from "react";
 
-const About = lazy(() => import('./Components/About.jsx'))
-const Contact = lazy(() => import('./Components/Contact.jsx').then((module) => (
-  {default: module.Contact}
-)))
+const About = lazy(() => import("./Components/About.jsx"));
+const Contact = lazy(() =>
+  import("./Components/Contact.jsx").then((module) => ({
+    default: module.Contact,
+  }))
+);
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <App/>,
+    path: "/",
+    element: <App />,
     children: [
       {
         path: "/",
@@ -28,15 +29,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About/>
-      }
-    ]
-  }
-
+        element: <About />,
+      },
+    ],
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
-  
-    <RouterProvider router={router} />
-  
+  <RouterProvider router={router} />
 );

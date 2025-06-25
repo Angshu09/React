@@ -1,0 +1,8 @@
+.counterContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    padding: 20px;
+}
